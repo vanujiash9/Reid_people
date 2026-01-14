@@ -1,0 +1,21 @@
+.# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+tracking_env/
+
+# Training outputs
+runs/
+data/
+weights/
+output/
+
+# Videos
+*.mp4
+
+# Model weights
+*.pt
+
+# YOLO stuff
+yolo*.pt

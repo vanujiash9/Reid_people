@@ -1,0 +1,27 @@
+
+torch
+torchvision
+torchaudio
+
+# --- YOLO & Computer Vision ---
+ultralytics>=8.0.0
+opencv-python
+
+# --- Data Processing & Metrics ---
+numpy
+pandas
+scikit-learn
+scipy
+matplotlib
+Pillow
+
+# --- Utilities ---
+tqdm
+pyyaml
+requests
+psutil
+
+# --- Tracking Support (Quan trọng cho Windows) ---
+# Thư viện này giúp thuật toán Tracking chạy được (Linear Assignment)
+# Dùng lapx thay cho lap để tránh lỗi biên dịch C++ trên Windows
+lapx

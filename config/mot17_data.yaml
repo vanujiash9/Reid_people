@@ -1,0 +1,6 @@
+names:
+- person
+nc: 1
+path: D:\Downloads\Computer vision\data\processed_data\mot_yolo
+train: images/train
+val: images/train

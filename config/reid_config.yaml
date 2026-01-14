@@ -1,0 +1,25 @@
+project: "ReID_Professional"
+
+data:
+  root_dir: "data/processed_data/reid_merged"
+  height: 256
+  width: 128
+  workers: 0
+  val_split: 0.1        
+  pin_memory: true
+
+model:
+  name: "resnet50"
+  pretrained: true
+  last_stride: 1
+
+train:
+  output_dir: "weights"
+  log_dir: "logs"
+  batch_size: 8
+  epochs: 60           
+  learning_rate: 0.00035 
+  weight_decay: 0.0005
+  patience: 10          
+  save_best_only: true  
+  log_freq: 10        

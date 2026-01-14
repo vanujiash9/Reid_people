@@ -1,0 +1,17 @@
+project: "YOLO_Pedestrian_Professional"
+
+data:
+  root_dir: "data/processed_data/mot_yolo"
+  yaml_name: "mot17_data.yaml"
+  imgsz: 640
+
+train:
+  model_type: "yolov8s.pt"  # RTX 3050 chạy bản 's' là tốt nhất cho độ chính xác
+  output_dir: "weights"
+  log_dir: "logs"
+  batch_size: 8             # Giữ 8 để an toàn cho 4GB VRAM
+  epochs: 50
+  patience: 10              # Dừng sớm sau 10 epoch nếu không tăng mAP
+  learning_rate: 0.01       # Tốc độ học mặc định cho YOLO fine-tune
+  device: 0                 # GPU 0
+  workers: 0                # Bắt buộc bằng 0 trên Windows để tránh lỗi Shared Memory

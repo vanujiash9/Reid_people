@@ -69,19 +69,7 @@ Global Person ID
 
 Ảnh bên phải minh họa kết quả truy vấn ReID, trong đó một ảnh query được so sánh với các ảnh trong gallery và trả về danh sách Top-K gần nhất.
 
-> Có thể bổ sung thêm video hoặc GIF demo:
 
-```markdown
-![Tracking Demo](assets/tracking-demo.gif)
-```
-
-Hoặc liên kết trực tiếp đến video kết quả:
-
-```markdown
-[▶ Xem video kết quả](result/tracked_video_final.mp4)
-```
-
----
 
 ## Tính năng chính
 
